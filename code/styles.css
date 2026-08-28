@@ -1,0 +1,231 @@
+/*Variables de la pastelería Pastelería Fridha | Callao*/
+:root {
+    --bg-primary:  #FFFDF7;
+    --bg-card:  #FFFFFF;
+    --text-main:  #3E2723;
+    --text-muted:  #6D4C41;
+    --acent-gold:  #D97706;
+    --acent-hover:  #B45309;
+    --whatsapp-green: #25D366;
+    --whatsapp-hover: #1EBE5D;
+    --border-light: #EFEBE9;
+    --background-hero: linear-gradient(135deg, #3E2723 0%, #5D4037 100%);
+    --product-cost: #FEF3C7;
+    --text-paragraph: #D7CCC8;
+    /*Font families*/
+
+    --font-family: system-ui, -apple-system,  BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;  
+}
+
+/*Reset basico y ajustes globales de la pastería Fridha | Callao*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg-primary);
+    font-family: var(--font-family);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+ul {
+   list-style: none; 
+}
+
+li {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    padding: 0.7rem 0.5rem;
+    border: 2px solid var(--text-muted);
+    border-radius: 0.5rem;
+    background: var(--bg-card);
+}
+
+
+.header {
+    display: grid;
+    grid-template-areas: 
+    "header--brand"
+    "header--nav";
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: var(--bg-card);
+}
+
+.header__brand {
+    grid-area: header--brand;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.header__name {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+}
+
+.header__location {
+    font-size: 0.8rem;
+    color: var(--acent-gold);
+    text-transform: uppercase;
+}
+
+.nav {
+    grid-area: header--nav;
+    padding: 1rem 0.3rem;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__link {
+    display: inline-block;
+    color: var(--text-main);
+}
+
+.hero {
+    padding: 0.3rem;
+    margin: 1rem 0.5rem;
+}
+
+.hero__container {
+    display: grid;
+    grid-template-areas: 
+    "hero--important"
+    "hero--actions";
+    justify-items: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: var(--background-hero);
+    color: var(--bg-card);    
+}
+
+.hero__important {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.hero__important p {
+    color: var(--text-paragraph);
+}
+
+.hero__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button--whatsapp {
+    background: var(--whatsapp-green);
+    padding: 0.85rem 1.8rem;
+    color: var(--bg-card);
+    border-radius: 2.1rem;
+}
+
+.button--products {
+    background: var(--acent-hover);
+    padding: 0.85rem 1.8rem;
+    border-radius: 2.1rem;
+    color: var(--bg-card);
+}
+
+.products {
+    padding: 1rem;
+    margin: 1rem 0.4rem;
+}
+
+.products__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.product__container {
+    background: var(--bg-card);
+    border: 2px solid var(--border-light);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+
+.product__container img {
+    width: 100%;
+    height: 12.5rem;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.product__description {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.2rem;
+}
+
+.product__cost {
+    background: var(--product-cost);
+    color: var(--acent-gold);
+    font-weight: bold;
+    padding: 0.3rem 0.8rem; 
+    border-radius: 1rem;
+}
+
+.product__link {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+   flex-grow: 0;
+}
+
+.footer {
+    background: var(--text-main);
+    color: var(--bg-card);
+    padding: 1rem;
+}
+
+.footer__container {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.footer__nav {
+    padding: 0.4rem;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.footer__information {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
