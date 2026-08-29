@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -17,16 +17,16 @@
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Nosotros</a>
+                    <a class="nav__link" href="#nosotros">Nosotros</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Pasteles</a>
+                    <a class="nav__link" href="#pasteles">Pasteles</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Panes</a>
+                    <a class="nav__link" href="#panes">Panes</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Bocaditos</a>
+                    <a class="nav__link" href="#bocaditos">Bocaditos</a>
                 </li>
             </ul>
         </nav>
@@ -37,98 +37,171 @@
 
         <section class="hero" id="inicio">
             <div class="hero__container">
-              <div class="hero__important"> <!-- Recuerda cambiar el nombre de este propiedad solo esta mientras tanto-->
-                <h2>Tortas personalizadas y panes recien horneados</h2>
-                <p>Donde existen tus momentos mas dulces</p>
-                </div> 
-            <div class="hero__actions">
-                <a href="" target="_blank" class="button button--whatsapp">Pedir por WhatsApp</a>
-                <a href="" class="button button--products">Nuestros productos</a>
+                <div class="hero__important">
+                    <!-- Recuerda cambiar el nombre de este propiedad solo esta mientras tanto-->
+                    <h2>Tortas personalizadas y panes recien horneados</h2>
+                    <p>Donde existen tus momentos mas dulces</p>
+                </div>
+                <div class="hero__actions">
+                    <a href="https://wa.me/51999999999?text=Hola,%20quisiera%20consultar%20por%20sus%20productos" target="_blank" class="button button--whatsapp" target="_blank" class="button button--whatsapp">Pedir por WhatsApp</a>
+                    <a href="#productos" class="button button--products">Nuestros productos</a>
+                </div>
             </div>
-        </div>
         </section>
 
-        <section class="us">
+        <section class="us" id="nosotros">
             <div class="us__container">
                 <div class="us__information">
-                    <h3>Somos una panadería ofreciendo 50 años de tradición</h3>
-                    <p>Nuestro objetivo es brindar los mejores pasteles, panes y postres del distrito de San miguel</p>
-                    <p>📍 Nos ubicamos en el Callao Av. Santa Rosa callao </p>
+                     <h3 class="us__title">Somos una panadería ofreciendo 50 años de tradición</h3>
+                      <div class="us__context">  
+                     <p>Nuestro objetivo es brindar los mejores pasteles, panes y postres del distrito del Callao</p>
+                    <p>"📍 Nos ubicamos en Av. Santa Rosa, Callao" </p>
                     <p>🕑 Nuestros horarios son Lunes a Sábado: 6:00 AM - 9:00 PM </p>
+                      </div>  
                 </div>
                 <div class="us__img">
                     <h4>Torta de tres leches</h4>
                     <img src="https://acomer.pe/wp-content/uploads/2017/04/3leches-perfil.jpg" alt="Torta de 3 leches">
-                    <p>Nos encanta mantener nuestra esencia en cada pedido</p>
-                    <a href="" class="button--us button--whatsapp">Pedir ahora</a>
+                    <p class="img__information">Nos encanta mantener nuestra esencia en cada pedido</p>
+                    <a href="https://wa.me/51999999999?text=Hola,%20quisiera%20pedir%20la%20Torta%20de%20Tres%20Leches" target="_blank" class="button--us button--whatsapp">Pedir ahora</a>
                 </div>
             </div>
         </section>
-
-
         <!--Nuestros productos-->
 
-        <section class="products" id="products">
-            <h2>Nuestras Especialidades</h2>
-            <div class="products__grid">
-                <article class="product__container">
-                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400" alt="Torta de chocolate">
-                    <div class="product__description">
-                        <h4>Torta especiales</h4>
-                        <p>Tenemos una gran variedad en chocolate, selva negra y personalizaciones para cumpleaños</p>
-                        <span class="product__cost">costo s/45.00</span>
-                    </div>
-                    <a href="" class="product__link">Pedir ahora</a>
-                </article>
-                <article  class="product__container">
-                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400" alt="Panes Artesanales">
-                    <div class="product__description">
-                        <h4>Panes artesanales</h4>
-                        <p>Pan Pan de ciabatta, baguette y francés caliente en el horario durante las mañanas y tardes
-                        </p>
-                        <span class="product__cost">Variedad diaria</span>
-                    </div>
-                    <a href="" class="product__link">Pedir ahora</a>
-                </article>
-                <article class="product__container">
-                    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400" alt="Galletas de chocolate">
-                    <div class="product__description">
-                      <h4>Bocaditos para eventos</h4>  
-                      <p>Tenemos una gran variedad en bocaditos como alfajores, empanaditas y piononos</p> 
-                      <span class="product__cost">Caja desde s/30.00</span>
-                    </div>
-                        <a  class="product__link">Pedir ahora</a>
-                    </article>
-                      <article class="product__container">
-                    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400" alt="Galletas de chocolate">
-                    <div class="product__description">
-                      <h4>Bocaditos para eventos</h4>  
-                      <p>Tenemos una gran variedad en bocaditos como alfajores, empanaditas y piononos</p> 
-                      <span class="product__cost">Caja desde s/30.00</span>
-                    </div>
-                        <a  class="product__link">Pedir ahora</a>
-                    </article>
+       <section class="products" id="productos">
+    <h2>Nuestras Especialidades</h2>
+    <div class="products__grid">
+        
+        <!-- Categoría 1: PASTELES -->
+        <div class="products__container products__cakes" id="pasteles">
+            <h3 class="products__title">Nuestros Pasteles</h3>
+            <div class="category__container category__container--cakes">
+            <article class="product__container">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400" alt="Torta Selva Negra">
+                <div class="product__description">
+                    <h4>Torta Selva Negra Especial</h4>
+                    <p>Bizcocho de chocolate húmedo con capas de mermelada de cerezas, crema chantilly fresca y virutas de chocolate amargo.</p>
+                    <span class="product__cost">Desde S/ 45.00</span>
+                    <a href="https://wa.me/51999999999?text=Hola,%20quisiera%20pedir%20la%20Torta%20Selva%20Negra" target="_blank" class="product__link">Pedir ahora</a> 
                 </div>
-        </section>
-      <!-- <section></section> -->  
+            </article>
+
+            <article class="product__container">
+                <img src="https://acomer.pe/wp-content/uploads/2017/04/3leches-perfil.jpg" alt="Torta Tres Leches Tradicional">
+                <div class="product__description">
+                    <h4>Torta Tres Leches del Callao</h4>
+                    <p>Nuestro clásico bizcocho bañado en la mezcla secreta de tres leches, decorado con merengue suave y un toque de canela.</p>
+                    <span class="product__cost">Desde S/ 40.00</span>
+                    <a href="https://wa.me/51999999999?text=Hola,%20quisiera%20pedir%20la%20Torta%20Tres%20Leches" target="_blank" class="product__link">Pedir ahora</a>
+                </div>
+            </article>
+
+            <article class="product__container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP0TwSajwSzuikuvqV1NlFHO_fbCMx7DtDhWTAopUF5FD9IHJf4UIve1KB&s=10" alt="Torta Personalizada de Cumpleaños">
+                <div class="product__description">
+                    <h4>Tortas de Cumpleaños Personalizadas</h4>
+                    <p>Diseñamos la torta de tus sueños para cualquier celebración. Elige la masa, el relleno de manjarblanco y la temática.</p>
+                    <span class="product__cost">Cotización según diseño</span>
+                    <a href="https://wa.me/51999999999?text=Hola,%20quisiera%20cotizar%20una%20torta%20personalizada" target="_blank" class="product__link">Pedir ahora</a>
+                </div>
+            </article>
+            </div>
+        </div>
+        
+        <!-- Categoría 2: PANES -->
+        <div class="products__container products__breads" id="panes">
+            <h3 class="products__title">Nuestros Panes Artesanales</h3>
+            <div class="category__container category__container--breads">
+            <article class="product__container">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400" alt="Pan Ciabatta Recién Horneado">
+                <div class="product__description">
+                    <h4>Pan Ciabatta Tradicional</h4>
+                    <p>Corteza crujiente y miga suave con alvéolos grandes. Perfecto para tus sándwiches de la mañana o lonches.</p>
+                    <span class="product__cost">Horneado diario</span>
+                    <a href="https://wa.me/51999999999?text=Hola,%20quisiera%20consultar%20por%20Pan%20Ciabatta" target="_blank" class="product__link">Pedir ahora</a>
+                </div>
+            </article>
+
+            <article class="product__container">
+                <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=400" alt="Baguette Francés">
+                <div class="product__description">
+                    <h4>Pan Baguette Francés</h4>
+                    <p>Pan de barra alargado con corteza dorada y crujiente, elaborado con masa madre siguiendo la tradición artesanal.</p>
+                    <span class="product__cost">Horneado a las 6 AM y 4 PM</span>
+                    <a href="https://wa.me/51999999999?text=Hola,%20quisiera%20consultar%20por%20Pan%20Baguette" target="_blank" class="product__link">Pedir ahora</a>
+                </div>
+            </article>
+
+            <article class="product__container">
+                <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=400" alt="Pan Yema y Francés">
+                <div class="product__description">
+                    <h4>Pan Francés y Yema Crocante</h4>
+                    <p>El infaltable del desayuno chalaco. Pan caliente recién salido del horno listo para acompañar tu café o chicharrón.</p>
+                    <span class="product__cost">S/ 0.40 por unidad</span>
+                    <a href="https://wa.me/51999999999?text=Hola,%20quisiera%20pedir%20panes%20para%20el%20desayuno" target="_blank" class="product__link">Pedir ahora</a>
+                </div>
+            </article>
+            </div>
+        </div>
+        
+        <!-- Categoría 3: BOCADITOS -->
+        <div class="products__container products__snacks" id="bocaditos">
+            <h3 class="products__title">Bocaditos para Eventos</h3>
+            <div class="category__container category__container--snacks">
+            <article class="product__container">
+                <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400" alt="Alfajorcitos de Manjarblanco">
+                <div class="product__description">
+                    <h4>Mini Alfajores de Maicena</h4>
+                    <p>Suaves alfajorcitos que se deshacen en la boca, rellenamos con generoso manjarblanco artesanal y espolvoreados con azúcar finísima.</p>
+                    <span class="product__cost">Caja x 50 unidades: S/ 35.00</span>
+                    <a href="https://wa.me/51999999999?text=Hola,%20quisiera%20pedir%20caja%20de%20Alfajorcitos" target="_blank" class="product__link">Pedir ahora</a>
+                </div>
+              
+            </article>
+
+            <article class="product__container">
+                <img src="https://images.unsplash.com/photo-1621236378699-8597faf6a176?w=400" alt="Empanaditas de Carne y Pollo">
+                <div class="product__description">
+                    <h4>Empanaditas Mixtas para Fiestas</h4>
+                    <p>Masa hojaldrada doradita rellena de jugoso aderezo de carne o pollo. El bocadito salado infaltable en tus reuniones.</p>
+                    <span class="product__cost">Caja x 50 unidades: S/ 40.00</span>
+                  <a href="https://wa.me/51999999999?text=Hola,%20quisiera%20pedir%20caja%20de%20Empanaditas" target="_blank" class="product__link">Pedir ahora</a>
+                </div>
+              
+            </article>
+
+            <article class="product__container">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400" alt="Piononitos y Hojaldres">
+                <div class="product__description">
+                    <h4>Piononitos Dúo Dulce</h4>
+                    <p>Rollitos de bizcochuelo suave rellenitos con manjarblanco o fudge. Ideales para mesas de dulces y catering corporativo.</p>
+                    <span class="product__cost">Caja x 50 unidades: S/ 30.00</span>
+                    <a href="https://wa.me/51999999999?text=Hola,%20quisiera%20pedir%20caja%20de%20Piononitos" target="_blank" class="product__link">Pedir ahora</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
     </main>
     <!--Información acerca del restaurante-->
 
     <footer class="footer">
         <div class="footer__container">
-            <nav class="footer__nav">
-                <ul class="footer__links">
-                    <li class="footer__link"><a href="">Nosotros</a></li>
-                    <li class="footer__link"><a href="">Pasteles</a></li>
-                    <li class="footer__link"><a href="">Panes</a></li>
-                    <li class="footer__link"><a href="">Bocaditos</a></li>
-                </ul>
-            </nav>
-            <div class="footer__information">
+              <div class="footer__information">
                 <p class="footer__description">Visitanos en el Callao Av. Santa Rosa callao</p>
                 <p class="footer__description">Horarios: 🕒 Lunes a Sábado: 6:00 AM - 9:00 PM</p>
             </div>
+            <nav class="footer__nav">
+                <ul class="footer__links">
+                    <li class="footer__link"><a class="footer__a" href="#nosotros">Nosotros</a></li>
+                    <li class="footer__link"><a class="footer__a" href="#pasteles">Pasteles</a></li>
+                    <li class="footer__link"><a class="footer__a" href="#panes">Panes</a></li>
+                    <li class="footer__link"><a class="footer__a" href="#bocaditos">Bocaditos</a></li>
+                </ul>
+            </nav>
         </div>
     </footer>
 </body>
+
 </html>
